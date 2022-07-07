@@ -1,9 +1,102 @@
+/* for sitelogo */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
+/* for navbar meanu */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+
+/* for navbar social media */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+/* for navbar resume_btn */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+
+
+
 body {
-    background: #100E17;
+    background: #2D2E32;
     color: #ffffff;
 }
 
 h1 {
     font-weight: 500;
     font-size: 6vw;
+}
+
+
+.main_wrapper {
+    width: 100%;
+}
+
+/* NavBar */
+
+.navbar {
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 25px;
+    /* border: 1px red solid; */
+}
+
+.siteLogo {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    word-spacing: -3px;
+}
+
+.menus_wrap {
+    justify-content: space-between;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.menu_con {
+    margin: 0 20px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu i {
+    font-size: 12px;
+}
+
+/* .menu::before {
+    content: "<i class="fal fa-terminal"></i>";
+    position: absolute;
+    left: -25px;
+} */
+
+/* .menu::after {
+    content: "/>";
+    position: absolute;
+    right: -25px;
+} */
+
+.social_media {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social_media a {
+    margin: 0 5px;
+}
+
+.social_media>a>i {
+    margin-right: 10px;
+}
+
+.resume_btn {
+    padding: 8px 25px 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--themeC);
+    border: 1px solid var(--themeC);
+    cursor: pointer;
 }
