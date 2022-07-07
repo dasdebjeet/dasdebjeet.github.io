@@ -14,9 +14,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 
-
-
-
 body {
     background: #2D2E32;
     color: #ffffff;
@@ -37,25 +34,40 @@ h1 {
 .navbar {
     justify-content: space-between;
     width: 100%;
-    height: 60px;
-    padding: 0 25px;
-    /* border: 1px red solid; */
+    height: 100px;
+    color: var(--wt);
+    /* border-bottom: 1px solid red; */
+}
+
+.navbar_wrap {
+    height: 100%;
+    padding: 0 50px;
+    /* border: 1px solid red; */
 }
 
 .siteLogo {
+    width: 20%;
+    justify-content: flex-start;
+
     font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
+    font-size: 1.6vw;
     letter-spacing: 0.5px;
     word-spacing: -3px;
 }
 
+.siteLogo a {
+    padding: 10px 20px;
+}
+
 .menus_wrap {
-    justify-content: space-between;
+    width: 50%;
+    justify-content: flex-start;
     font-family: 'Share Tech Mono', monospace;
 }
 
 .menu_con {
-    margin: 0 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
 }
 
 .menu {
@@ -66,31 +78,30 @@ h1 {
     font-size: 12px;
 }
 
-/* .menu::before {
-    content: "<i class="fal fa-terminal"></i>";
-    position: absolute;
-    left: -25px;
-} */
-
-/* .menu::after {
-    content: "/>";
-    position: absolute;
-    right: -25px;
-} */
+.details_wrap {
+    width: 30%;
+    padding-right: 70px;
+    justify-content: space-between;
+}
 
 .social_media {
     font-family: 'Quicksand', sans-serif;
 }
 
-.social_media a {
+/* .social_media a {
     margin: 0 5px;
-}
+} */
 
 .social_media>a>i {
     margin-right: 10px;
 }
 
-.resume_btn {
+.social_media_links {
+    padding: 10px 15px;
+    /* border: 1px solid red; */
+}
+
+.resumeBtn_con {
     padding: 8px 25px 5px;
     font-family: 'Teko', sans-serif;
     font-size: 16px;
@@ -100,3 +111,95 @@ h1 {
     border: 1px solid var(--themeC);
     cursor: pointer;
 }
+
+
+/* Navbar */
+
+
+/* Intro */
+.main_container {
+    margin: 0 70px;
+}
+
+.intro_con {}
+
+.intro_subs {
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.intro_subLeft {
+    padding: 50px 30px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.intro_tag_con {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.intro_tag {
+    background: var(--themeC);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: var(--fullDarkGrey);
+    border-radius: 3px;
+}
+
+.introText1 {
+    margin-bottom: 30px;
+    font-size: 4vw;
+    letter-spacing: -4px;
+}
+
+.introText2 {
+    margin-bottom: 50px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    /* line-height: 20px; */
+    color: var(--greyLight);
+}
+
+.intro_subLeft .chatBtn {
+    letter-spacing: 1.5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    color: var(--themeC);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.mini_count_con {
+    margin-top: 100px;
+    justify-content: flex-start;
+}
+
+.mini_count {
+    height: 50px;
+    margin-right: 50px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+}
+
+.mini_countSec1 {
+    width: 50px;
+    margin-top: 5px;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 5px 0;
+    font-size: 50px;
+}
+
+.mini_countSec2 {
+    height: 100%;
+    padding: 0 10px;
+    color: var(--greyLight);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+/* Intro */

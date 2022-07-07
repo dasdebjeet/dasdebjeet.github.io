@@ -3,6 +3,9 @@
 
 :root {
     --themeC: #27f397;
+    --fullDarkGrey: #02030a;
+    --greyLight: #747474;
+    --wt: #ffffff;
 }
 
 * {
@@ -19,6 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fbreak {
+    flex-basis: 100%;
+    /* width: 100%; */
+    height: 0;
 }
 
 .noscroll {
