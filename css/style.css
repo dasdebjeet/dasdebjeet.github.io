@@ -5,7 +5,7 @@
     --themeC: #71FCAA;
     --bgGrey: #2D2E32;
     --fullDarkGrey: #02030a;
-    --DarkGrey: #25262A;
+    --DarkGrey: #25262A; 
     --greyLight: #747474;
     --wt: #ffffff;
 }
@@ -40,4 +40,43 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+
+
+
+/* code systanx */
+
+.note_con_text .dot {
+    color: #5e5e5e;
+    vertical-align: text-bottom;
+}
+
+.note_con_text .method {
+    color: #4250d0;
+}
+
+.note_con_text .propname {
+    color: #cac645;
+}
+
+.note_con_text .scope {
+    color: #FC5B52;
+}
+
+.note_con_text .prop2 {
+    color: #71FCAA;
+}
+
+.note_con_text .string {
+    color: #5b00ab;
+}
+
+.note_con_text .number {
+    color: #3bbcbf;
+}
+
+.note_con_text .comment {
+    color: #78707e;
+    font-style: italic;
 }
