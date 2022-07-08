@@ -16,7 +16,7 @@
 
 body {
     background: #2D2E32;
-    color: #ffffff;
+    color: var(--wt);
 }
 
 h1 {
@@ -60,9 +60,10 @@ h1 {
 }
 
 .menus_wrap {
-    width: 50%;
+    width: 45%;
     justify-content: flex-start;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 13px;
 }
 
 .menu_con {
@@ -75,22 +76,19 @@ h1 {
 }
 
 .menu i {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .details_wrap {
-    width: 30%;
+    width: 35%;
     padding-right: 70px;
     justify-content: space-between;
 }
 
 .social_media {
     font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
 }
-
-/* .social_media a {
-    margin: 0 5px;
-} */
 
 .social_media>a>i {
     margin-right: 10px;
@@ -102,6 +100,7 @@ h1 {
 }
 
 .resumeBtn_con {
+    /* margin-left: 20px; */
     padding: 8px 25px 5px;
     font-family: 'Teko', sans-serif;
     font-size: 16px;
@@ -118,18 +117,23 @@ h1 {
 
 /* Intro */
 .main_container {
-    margin: 0 70px;
+    /* margin: 0 70px; */
 }
 
-.intro_con {}
+.intro_con {
+    height: calc(100vh - 100px);
+    margin: 0 100px;
+}
 
 .intro_subs {
     width: 50%;
+    min-height: 100%;
     /* border: 1px solid red; */
 }
 
 .intro_subLeft {
-    padding: 50px 30px;
+    /* margin-left: 100px; */
+    padding: 50px 0px;
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -173,7 +177,7 @@ h1 {
 }
 
 .mini_count_con {
-    margin-top: 100px;
+    margin-top: 80px;
     justify-content: flex-start;
 }
 
@@ -201,5 +205,18 @@ h1 {
     line-height: 20px;
 }
 
+.intro_subRight {
+    background: url("../assests/cover_pic.svg") no-repeat;
+    background-size: 115%;
+    background-position: 50% 0%;
+}
 
 /* Intro */
+
+/* services_con */
+.services_con {
+    background: #25262A;
+    height: 100vh;
+}
+
+/* services_con */
