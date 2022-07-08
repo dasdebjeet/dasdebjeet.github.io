@@ -14,8 +14,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 
+/* for name display */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
 body {
-    background: #2D2E32;
+    background: var(--bgGrey);
     color: var(--wt);
 }
 
@@ -69,6 +73,12 @@ h1 {
 .menu_con {
     margin: 0 10px;
     padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_con:hover {
+    color: var(--themeC);
 }
 
 .menu {
@@ -214,9 +224,119 @@ h1 {
 /* Intro */
 
 /* services_con */
-.services_con {
+.services_wrap {
     background: #25262A;
     height: 100vh;
+}
+
+.services_con {
+    align-items: flex-start;
+    margin: 0 100px;
+    padding: 100px 0;
+}
+
+.services_subs {
+    width: 50%;
+}
+
+/* services_subLeft */
+
+.services_card_wrap {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.services_card {
+    background: var(--bgGrey);
+    margin-bottom: 10px;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #1e1f22;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.services_card:hover .services_card_head>h3 {
+    color: var(--themeC);
+}
+
+.services_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 35px #191a1c;
+}
+
+
+.services_card_head {
+    margin-bottom: 10px;
+    justify-content: space-between;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 100;
+    font-size: 18px;
+    color: var(--themeC);
+    transition: all 0.3s ease-in-out;
+}
+
+.services_card_head>h3 {
+    font-weight: 100;
+    color: var(--wt);
+}
+
+.services_card_text {
+    margin-bottom: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--greyLight);
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.services_card_proj {
+    letter-spacing: 1.5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 11px;
+}
+
+/* services_subRight */
+.services_subRight {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.services_subRight_Head {
+    margin-bottom: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--greyLight);
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.services_subRight_title {
+    margin-bottom: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 35px;
+    color: var(--wt);
+}
+
+
+.services_subRight_subTitle {
+    margin-bottom: 50px;
+    letter-spacing: 1.5px;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.services_subRight_Text {
+    width: 70%;
+    font-family: 'Share Tech Mono', monospace;
+    /* text-align: justify; */
+    color: var(--greyLight);
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 /* services_con */
