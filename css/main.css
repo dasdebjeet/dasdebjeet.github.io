@@ -13,14 +13,14 @@
 /* for navbar resume_btn */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
-
-/* for name display */
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--bgGrey);
     color: var(--wt);
+    /* overflow-x: hidden; */
 }
 
 h1 {
@@ -167,13 +167,13 @@ h1 {
     margin-bottom: 30px;
     font-size: 4vw;
     letter-spacing: -4px;
+    text-shadow: -2px 8px 8px #17181b;
 }
 
 .introText2 {
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: -1px;
-    /* line-height: 20px; */
     color: var(--greyLight);
 }
 
@@ -232,7 +232,7 @@ h1 {
 .services_con {
     align-items: flex-start;
     margin: 0 100px;
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 
 .services_subs {
@@ -319,6 +319,25 @@ h1 {
     color: var(--wt);
 }
 
+.title_colorChange {
+    color: var(--themeC);
+    /* animation: change-color 2s ease-in-out infinite alternate; */
+}
+
+/* Keyframes */
+@keyframes change-color {
+    0% {
+        color: var(--themeC);
+    }
+
+    50% {
+        color: #6071fc;
+    }
+
+    100% {
+        color: #fc5b52;
+    }
+}
 
 .services_subRight_subTitle {
     margin-bottom: 50px;
@@ -349,7 +368,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 100px;
-    padding: 50px 0;
+    padding: 100px 0 0;
 }
 
 /* work_subLeft */
@@ -365,28 +384,84 @@ h1 {
 .work_subLeft_head {
     letter-spacing: 1.5px;
     font-family: 'Quicksand', sans-serif;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 30px;
 }
 
+/* work_subRight */
+
+.work_subRight_head {
+    margin-top: 150px;
+    letter-spacing: 1.5px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: var(--themeC);
+}
+
+.work_subRight_text {
+    margin-top: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--greyLight);
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+}
 
 /* work_card */
 .work_card_con {
+    position: relative;
     margin-top: 50px;
+
+    z-index: 1;
+
+}
+
+.work_card_con_bgTitle {
+    position: absolute;
+    letter-spacing: 1.5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20vw;
+    color: #7474740f;
+    text-transform: uppercase;
+
+    z-index: -1;
+    user-select: none;
+}
+
+.bgTitle_web {
+    top: -22%;
+    right: -15%;
+}
+
+.bgTitle_apps {
+    bottom: 31%;
+    left: -15%;
 }
 
 .work_card {
     background: var(--bgGrey);
     margin-bottom: 100px;
     width: 400px;
-    box-shadow: 0px 0px 20px #121314bd;
+    box-shadow: 1px 1px 18px #0e0e10;
     cursor: pointer;
     border-radius: 5px;
+
 }
 
 .work_card:hover .imgOverlay_count>i {
     transform: translateX(10px);
 }
+
+
+.work_card_LShift {
+    margin-left: 100px;
+}
+
+.work_card_RShift {
+    margin-right: 100px;
+}
+
 
 .work_card_headerL {
     background: var(--bgGrey);
@@ -472,12 +547,12 @@ h1 {
 /* notes or about */
 
 .note_wrap {
-    /* background: #191a1d; */
+    background: var(--DarkGrey);
 }
 
 .note_con {
     margin: 0 100px;
-    padding: 50px 0 100px;
+    padding: 50px 0 0;
 }
 
 .note_con_head {
@@ -493,19 +568,53 @@ h1 {
     margin-bottom: 50px;
     letter-spacing: 1.5px;
     font-family: 'Quicksand', sans-serif;
-    font-style: italic;
     font-size: 25px;
 }
 
+
+.noteCode_screenCon {
+    background: #191A1D;
+    border-radius: 5px;
+    box-shadow: 1px 1px 25px #0e0e1094;
+}
+
+.noteCode_screenCon_headBar {
+    background: var(--bgGrey);
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.noteCode_screenCon_headBar .headerL_winDots {
+    background: #FC5B52;
+    margin-right: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.noteCode_screenCon_footBar {
+    background: var(--bgGrey);
+    justify-content: flex-start;
+    width: 100%;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+}
+
 .note_con_text {
+    margin: 20px;
     padding-left: 60px;
     font-family: 'Share Tech Mono', monospace;
-    line-height: 22px;
+    line-height: 20px;
     word-spacing: 5px;
 }
 
 .code_ln {
     position: relative;
+    padding: 3px 10px;
 }
 
 .code_ln::before {
@@ -520,32 +629,79 @@ h1 {
     top: 0;
 }
 
-.blinking_cursor {
-    font-weight: 100;
-    color: #8a24e3;
-    animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-
-    from,
-    to {
-        color: transparent;
-    }
-
-    50% {
-        color: #8a24e3;
-    }
+.code_ln:hover {
+    background: #cdcdcd14;
 }
 
 /* notes or about */
 
 
+/* contact */
+.contact_wrap {
+    background: var(--DarkGrey);
+}
+
+.contact_con {
+    margin: 0 100px;
+    padding: 100px 0;
+}
+
+.contact_con_head {
+    margin-bottom: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--greyLight);
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.contact_con_title {
+    margin-bottom: 50px;
+    letter-spacing: 1.5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.contact_cardCon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.contact_card {
+    justify-content: flex-start;
+    font-size: 15px;
+    color: var(--greyLight);
+    transition: all 0.2s ease-in-out;
+    /* border: 1px solid red; */
+}
+
+.contact_card:hover {
+    color: var(--themeC);
+}
+
+.contact_cardIcn {
+    justify-content: flex-start;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.contact_cardText {
+    padding-right: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 100;
+}
+
+/* contact */
+
 
 /* footer or contact */
 
 .footer_con {
-    background: var(--DarkGrey);
+    background: var(--bgGrey);
 }
 
 .footer {
@@ -561,11 +717,9 @@ h1 {
 
 /* footer_Left */
 .footer_subLeft {
-    /* margin-bottom: 50px; */
     letter-spacing: 1.5px;
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
-    font-weight: 600;
 }
 
 .footer_subLeft_title {
@@ -612,6 +766,11 @@ h1 {
 
 .footer_subRight_link {
     margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer_subRight_link:hover {
+    color: var(--themeC);
 }
 
 .footer_subRight_link i {
@@ -643,9 +802,9 @@ h1 {
 }
 
 .footer_bottomSub {
-    margin-right: 170px;
+    margin-right: 80px;
 }
 
 .f_socialLink {
-    margin-right: 20px;
+    margin-right: 30px;
 }

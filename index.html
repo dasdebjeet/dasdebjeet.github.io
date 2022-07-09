@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DebjeetDas - Portfolio</title>
+        <title>DebjeetDas Portfolio - Fullstack Developer</title>
 
 
         <!-- Favicon -->
@@ -26,30 +26,36 @@
         <script src="./js/main.js"></script>
 
 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js'></script>
+
+        <style>
+
+
+        </style>
     </head>
 
     <body>
         <div class="main_wrapper">
             <div class="navbar flexc">
-                <div class="navbar_wrap siteLogo flexc"><a href=""><strong style="color:#ffffff">Debjeet</strong>Das.</a></div>
+                <div class="navbar_wrap siteLogo flexc"><a><strong style="color:#ffffff">Debjeet</strong>Das.</a></div>
                 <div class="navbar_wrap menus_wrap flexc">
-                    <div class="menu_con">
+                    <a href="#services" class="menu_con">
                         <div class="menu"><i class="fal fa-terminal"></i> Services</div>
-                    </div>
-                    <div class="menu_con">
+                    </a>
+                    <a href="#work" class="menu_con">
                         <div class="menu"><i class="fal fa-terminal"></i> Work</div>
-                    </div>
-                    <div class="menu_con">
+                    </a>
+                    <a href="#notes" class="menu_con">
                         <div class="menu"><i class="fal fa-terminal"></i> Notes</div>
-                    </div>
-                    <div class="menu_con">
+                    </a>
+                    <a href="#contact" class="menu_con">
                         <div class="menu"><i class="fal fa-terminal"></i> Contact</div>
-                    </div>
+                    </a>
                 </div>
                 <div class="navbar_wrap details_wrap flexc">
                     <div class="social_media flexc">
-                        <a href="" class="social_media_links flexc" style="margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
-                        <a href="" class="social_media_links flexc"><i class="fab fa-github"></i> Github</a>
+                        <a href="https://twitter.com/DebjeetDas3" target="_blank" class="social_media_links flexc" style="margin-right: 10px;"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://github.com/dasdebjeet" target="_blank" class="social_media_links flexc"><i class="fab fa-github"></i> Github</a>
                     </div>
 
 
@@ -63,7 +69,7 @@
 
             <div class="main_container">
 
-                <div class="intro_con flexc">
+                <div class="intro_con flexc" id="">
                     <div class="intro_subs intro_subLeft">
                         <div class="intro_tag_con flexc">
                             <div class="intro_tag">#engineer</div>
@@ -73,9 +79,9 @@
                             <div class="intro_tag">#WEB Developer</div>
                             <div class="intro_tag">#WEB Designer</div>
                         </div>
-                        <p class="introText1">Talk is cheap.<br>Show me the code&frasl;&gt;</p>
+                        <p class="introText1">Talk is cheap.<br>Show me the code<span style="font-size: 45px; letter-spacing: -3px; margin-left: 10px;">&frasl;&gt;</span></p>
                         <p class="introText2">I <em>develope</em> and <em>code</em> beautify simpily <span class="typewrite" data-period="2000" data-type='["websites,", "apps,", "games,", "things," ]' style="color:var(--themeC); font-style: italic;"></span><br>and I love what I do.</p>
-                        <a href="" class="chatBtn">Let's chat!</a>
+                        <a href="mailto:debjeet194@gmail.com?body=Hi,I found this website and I would like to have a talk with u." target="_blank" class="chatBtn">Let's chat!</a>
 
 
                         <div class="mini_count_con flexc">
@@ -92,7 +98,7 @@
                     <div class="intro_subs intro_subRight"></div>
                 </div>
 
-                <div class="services_wrap">
+                <div class="services_wrap" id="services">
                     <div class="services_con flexc">
                         <div class="services_subs services_subLeft">
                             <div class="services_card_wrap flexc">
@@ -102,7 +108,7 @@
                                         <i class="fal fa-drafting-compass"></i>
                                     </div>
                                     <p class="services_card_text">Create cool products with unique ideas</p>
-                                    <div class="services_card_proj">15 Projects</div>
+                                    <div class="services_card_proj">5 Projects</div>
                                 </div>
                                 <div class="services_card">
                                     <div class="services_card_head flexc">
@@ -118,26 +124,33 @@
                                         <i class="fal fa-server"></i>
                                     </div>
                                     <p class="services_card_text">Awesome backend with cool dashboards</p>
-                                    <div class="services_card_proj">5 Projects</div>
+                                    <div class="services_card_proj">15 Projects</div>
                                 </div>
                             </div>
                         </div>
                         <div class="services_subs services_subRight">
                             <div class="services_subRight_Head">Introduce</div>
-                            <div class="services_subRight_title">Hello! I'm <span style="font-family: 'Sacramento', cursive; font-style: italic;">Debjeet Das</span></div>
-                            <p class="services_subRight_subTitle">Every great project begin with an <br> even better story</p>
+                            <div class="services_subRight_title">Hello! I'm <span class="title_colorChange">Debjeet Das</span></div>
+                            <p class="services_subRight_subTitle">Every great project begin with an even <br>better story</p>
                             <p class="services_subRight_Text">
                                 Since beginning my journey as a student and a freelance web developer nearly 5 years ago. I've done
                                 remote work for agencies, consulted for startup, and collaborated with talented people to create
                                 and develope great products for both busniess and consumer use. I'm quietly confident, naturally
                                 curious, and perpetually working on improving my skills to be a better problem solver.
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                Currently I<span style="color: var(--themeC);">'</span>m lost in the World of Programming.
                             </p>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="work_wrap">
+                <div class="work_wrap" id="work">
                     <div class="work_con flexc">
                         <div class="work_subs work_subLeft">
                             <p class="work_subLeft_text">Perfect solutions for digital experince</p>
@@ -164,7 +177,7 @@
                                     <div class="work_card_footerL"></div>
                                 </div>
 
-                                <div class="work_card" style="margin-left: 100px;">
+                                <div class="work_card work_card_LShift">
                                     <div class="work_card_headerL flexc">
                                         <div class="headerL_winDots" style="background: #fc5B52;"></div>
                                         <div class="headerL_winDots" style="background: #fffb76;"></div>
@@ -183,7 +196,7 @@
                                     <div class="work_card_footerL"></div>
                                 </div>
 
-                                <div class="work_card">
+                                <div class="work_card" style="margin-top: 200px;">
                                     <div class="work_card_headerL flexc">
                                         <div class="headerL_winDots" style="background: #fc5B52;"></div>
                                         <div class="headerL_winDots" style="background: #fffb76;"></div>
@@ -202,7 +215,7 @@
                                     <div class="work_card_footerL"></div>
                                 </div>
 
-                                <div class="work_card" style="margin-left: 100px;">
+                                <div class="work_card work_card_LShift">
                                     <div class="work_card_headerL flexc">
                                         <div class="headerL_winDots" style="background: #fc5B52;"></div>
                                         <div class="headerL_winDots" style="background: #fffb76;"></div>
@@ -221,13 +234,17 @@
                                     <div class="work_card_footerL"></div>
                                 </div>
 
+                                <div class="work_card_con_bgTitle bgTitle_apps">Apps</div>
+
 
                             </div>
                         </div>
                         <div class="work_subs work_subRight">
                             <div class="work_card_con">
+                                <div class="work_card_con_bgTitle bgTitle_web">WEB</div>
 
-                                <div class="work_card" style="margin-right: 100px;">
+
+                                <div class="work_card work_card_RShift">
                                     <div class="work_card_headerL flexc">
                                         <div class="headerL_winDots" style="background: #fc5B52;"></div>
                                         <div class="headerL_winDots" style="background: #fffb76;"></div>
@@ -246,7 +263,7 @@
                                     <div class="work_card_footerL"></div>
                                 </div>
 
-                                <div class="work_card" style="margin-left: 100px;">
+                                <div class="work_card work_card_LShift">
                                     <div class="work_card_headerL flexc">
                                         <div class="headerL_winDots" style="background: #fc5B52;"></div>
                                         <div class="headerL_winDots" style="background: #fffb76;"></div>
@@ -255,7 +272,7 @@
                                     <div class="work_card_imgCon">
                                         <div class="work_card_imgOverlay">
                                             <div class="work_card_imgOverlay_info flexc">
-                                                <div class="imgOverlay_text">SuperYou</div>
+                                                <div class="imgOverlay_text">SuperYou Academy</div>
                                                 <div class="imgOverlay_line"></div>
                                                 <div class="imgOverlay_count">04<br><i class="far fa-long-arrow-alt-right"></i></div>
                                             </div>
@@ -285,36 +302,107 @@
                                 </div>
 
                             </div>
+
+                            <div class="work_subRight_head">All Projects</div>
+                            <p class="work_subRight_text">
+                                Some projects couldn't be published<br>
+                                if you want to see more, <a href="#contact" style="color: var(--themeC);">contact</a>
+                            </p>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="note_wrap">
+                <div class="note_wrap" id="notes">
                     <div class="note_con">
                         <div class="note_con_head">About</div>
                         <div class="note_con_title">Lemme show you some code</div>
 
-                        <div class="note_con_text">
-                            <div class="code_ln" data-ln="01"> <span class="method">class</span> <span class="propname">Debjeet</span> {</div>
-                            <div class="code_ln" data-ln="02"> <span class="comment"><span class="dot">..</span>// I'm ambitious and love new challenges :)</span></div>
-                            <div class="code_ln" data-ln="03"> <span class="comment"><span class="dot">..</span>// My vast variety of skills is continuously expanding.</span></div>
-                            <div class="code_ln" data-ln="04"> <span class="dot">..</span><span class="method">constructor</span>() {</div>
-                            <div class="code_ln" data-ln="05"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">name</span> = <span class="string">"Debjeet Das"</span></div>
-                            <div class="code_ln" data-ln="06"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">dateOfBirthTimeStamp</span> = <span class="number">21022001</span></div>
-                            <div class="code_ln" data-ln="07"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">email</span> = <span class="string">"debjeet194@gmail.com"</span></div>
-                            <div class="code_ln" data-ln="08"> <span class="dot">..</span>}</div>
-                            <div class="code_ln" data-ln="09"> <span class="dot">..</span><span class="propname">education</span>() {</div>
-                            <div class="code_ln" data-ln="10"> <span class="dot">....</span><span class="method">return</span> [</div>
-                            <div class="code_ln" data-ln="11"> <span class="dot">.....</span>{ <span class="string">'2010-2017'</span> : <span class="string">"Calcutta Boys' School"</span> }</div>
-                            <div class="code_ln" data-ln="12"> <span class="dot">.....</span>{ <span class="string">'2017-2020'</span> : <span class="string">"Swami Vivekananda Institute Of Science & Technology"</span> }</div>
-                            <div class="code_ln" data-ln="13"> <span class="dot">.....</span>{ <span class="string">'2020-2023'</span> : <span class="string">"Aliah University"</span> }</div>
-                            <div class="code_ln" data-ln="14"> <span class="dot">....</span>]</div>
-                            <div class="code_ln" data-ln="15"> <span class="dot">..</span>}</div>
-                            <div class="code_ln" data-ln="16"> <span class="dot">..</span><span class="propname">skills</span>() {</div>
-                            <div class="code_ln" data-ln="17"> <span class="dot">....</span><span class="method">return</span> [ <span class="string">"HTML", "CSS", "JS", "Node.js", "jQuery", "php", "MySQL", "C",</span></div>
-                            <div class="code_ln" data-ln="18"> <span class="dot">....</span><span class="string">"C++", "python" "Wordpress", "Photoshop", "Illustrator", "UX/UI" <span class="blinking_cursor">|</span></span></div>
-                            <div class="code_ln" data-ln="19"> <span class="dot">..</span>}</div>
-                            <div class="code_ln" data-ln="20"> }</div>
+                        <div class="noteCode_screenCon">
+                            <div class="noteCode_screenCon_headBar flexc">
+                                <div class="headerL_winDots" style="background: #fc5B52;"></div>
+                                <div class="headerL_winDots" style="background: #fffb76;"></div>
+                                <div class="headerL_winDots" style="background: var(--themeC);"></div>
+                            </div>
+
+                            <div class="note_con_text">
+                                <div class="code_ln" data-ln="01"> <span class="method">class</span> <span class="propname">Debjeet</span> {</div>
+                                <div class="code_ln" data-ln="02"> <span class="comment"><span class="dot">..</span>// I'm ambitious and love new challenges :)</span></div>
+                                <div class="code_ln" data-ln="03"> <span class="comment"><span class="dot">..</span>// My vast variety of skills is continuously expanding.</span></div>
+                                <div class="code_ln" data-ln="04"> <span class="dot">..</span><span class="method">constructor</span>() {</div>
+                                <div class="code_ln" data-ln="05"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">name</span> = <span class="string">"Debjeet Das"</span></div>
+                                <div class="code_ln" data-ln="06"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">dateOfBirthTimeStamp</span> = <span class="number">21022001</span></div>
+                                <div class="code_ln" data-ln="07"> <span class="dot">....</span><span class="scope">this</span>.<span class="prop2">email</span> = <span class="string">"debjeet194@gmail.com"</span></div>
+                                <div class="code_ln" data-ln="08"> <span class="dot">..</span>}</div>
+                                <div class="code_ln" data-ln="09"> <span class="dot">..</span><span class="propname">education</span>() {</div>
+                                <div class="code_ln" data-ln="10"> <span class="dot">....</span><span class="method">return</span> [</div>
+                                <div class="code_ln" data-ln="11"> <span class="dot">.....</span>{ <span class="string">'2010-2017'</span> : <span class="string">"Calcutta Boys' School"</span> }</div>
+                                <div class="code_ln" data-ln="12"> <span class="dot">.....</span>{ <span class="string">'2017-2020'</span> : <span class="string">"Swami Vivekananda Institute Of Science & Technology"</span> }</div>
+                                <div class="code_ln" data-ln="13"> <span class="dot">.....</span>{ <span class="string">'2020-2023'</span> : <span class="string">"Aliah University"</span> }</div>
+                                <div class="code_ln" data-ln="14"> <span class="dot">....</span>]</div>
+                                <div class="code_ln" data-ln="15"> <span class="dot">..</span>}</div>
+                                <div class="code_ln" data-ln="16"> <span class="dot">..</span><span class="propname">skills</span>() {</div>
+                                <div class="code_ln" data-ln="17"> <span class="dot">....</span><span class="method">return</span> [ <span class="string">"HTML", "CSS", "JS", "Node.js", "jQuery", "php", "MySQL", "C",</span></div>
+                                <div class="code_ln" data-ln="18"> <span class="dot">....</span><span class="string">"C++", "Java", "python" "Wordpress", "Photoshop", "Illustrator", "UX/UI" <span class="blinking_cursor">|</span></span>]</div>
+                                <div class="code_ln" data-ln="19"> <span class="dot">..</span>}</div>
+                                <div class="code_ln" data-ln="20"> }</div>
+                            </div>
+
+                            <div class="noteCode_screenCon_footBar flexc"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact_wrap" id="contact">
+                    <div class="contact_con">
+                        <div class="contact_con_head">Contact</div>
+                        <div class="contact_con_title">Find me on</div>
+
+
+                        <div class="contact_cardCon flexc">
+
+                            <a href="https://www.linkedin.com/in/dasdebjeet" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="contact_cardText flexc" style="padding-top:5px;">in/dasdebjeet</div>
+                            </a>
+
+                            <a href="https://twitter.com/DebjeetDas3" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-twitter"></i></div>
+                                <div class="contact_cardText flexc">@DebjeetDas3</div>
+                            </a>
+
+                            <a href="https://github.com/dasdebjeet" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-github"></i></div>
+                                <div class="contact_cardText flexc">github.com/dasdebjeet</div>
+                            </a>
+
+                            <a href="mailto:debjeet194@gmail.com" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fal fa-comment-alt"></i></div>
+                                <div class="contact_cardText flexc">debjeet194@gmail.com</div>
+                            </a>
+
+                            <a href="https://www.facebook.com/debjeet.das.587" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-facebook-f"></i></div>
+                                <div class="contact_cardText flexc">debjeet.das</div>
+                            </a>
+
+                            <a href="https://www.instagram.com/das.debjeet/" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-instagram"></i></div>
+                                <div class="contact_cardText flexc">das.debjeet</div>
+                            </a>
+
+                            <a href="https://www.snapchat.com/add/das_debjeet" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-snapchat-ghost"></i></div>
+                                <div class="contact_cardText flexc">das_debjeet</div>
+                            </a>
+
+                            <a href="http://wasap.my/919163898569" target="_blank" class="contact_card flexc">
+                                <div class="contact_cardIcn flexc"><i class="fab fa-whatsapp"></i></div>
+                                <div class="contact_cardText flexc">+91 9163898569</div>
+                            </a>
+
+
                         </div>
 
                     </div>
@@ -325,7 +413,7 @@
                 <div class="footer flexc">
                     <div class="footer_sub footer_subLeft">
                         <div class="footer_subLeft_head">Let's make something amazing<br> together.</div>
-                        <div class="footer_subLeft_title">Start by <a href="">saying hi</a></div>
+                        <div class="footer_subLeft_title">Start by <a href="mailto:debjeet194@gmail.com?body=Hi,I found this website and I would like to have a talk with u." target="_blank">saying hi</a></div>
                     </div>
                     <div class="footer_sub footer_subRight">
                         <div class="footer_subRight_head">Information</div>
@@ -333,32 +421,32 @@
                         <div class="footer_subRight_mail">debjeet194@gmail.com</div>
 
                         <div class="footer_subRight_linkCon flexc">
-                            <a href="" class="footer_subRight_link"><i class="fal fa-terminal"></i> Services</a>
-                            <a href="" class="footer_subRight_link"><i class="fal fa-terminal"></i> Work</a>
-                            <a href="" class="footer_subRight_link"><i class="fal fa-terminal"></i> Notes</a>
-                            <a href="" class="footer_subRight_link"><i class="fal fa-terminal"></i> Contact</a>
+                            <a href="#services" class="footer_subRight_link"><i class="fal fa-terminal"></i> Services</a>
+                            <a href="#work" class="footer_subRight_link"><i class="fal fa-terminal"></i> Work</a>
+                            <a href="#notes" class="footer_subRight_link"><i class="fal fa-terminal"></i> Notes</a>
+                            <a href="#contact" class="footer_subRight_link"><i class="fal fa-terminal"></i> Contact</a>
                         </div>
                     </div>
 
                 </div>
                 <div class="footer_bottom flexc">
                     <div class="footer_bottomSub footer_bottomLeft flexc">
-                        <a class="siteLogo flexc" href=""><strong style="color:#ffffff">Debjeet</strong>Das.</a>
-                        <div class="copywrite">&#169; 2022 all rights reserved.</div>
+                        <a class="siteLogo flexc"><strong style="color:#ffffff">Debjeet</strong>Das.</a>
+                        <div class="copywrite">Made with <i class="fal fa-code"></i> by Debjeet. &#169; 2022 all rights reserved.</div>
                     </div>
 
                     <div class="footer_bottomSub footer_bottomRight">
                         <div class="f_socialLink_con">
-                            <a href="" class="f_socialLink"><i class="fab fa-twitter"></i></a>
-                            <a href="" class="f_socialLink"><i class="fab fa-github"></i></a>
-                            <a href="" class="f_socialLink"><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class="f_socialLink"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/DebjeetDas3" target="_blank" class="f_socialLink"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/dasdebjeet" target="_blank" class="f_socialLink"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/dasdebjeet" target="_blank" class="f_socialLink"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/debjeet.das.587" target="_blank" class="f_socialLink"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/das.debjeet" target="_blank" class="f_socialLink"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
     </body>
 

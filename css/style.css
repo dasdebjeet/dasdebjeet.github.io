@@ -5,10 +5,49 @@
     --themeC: #71FCAA;
     --bgGrey: #2D2E32;
     --fullDarkGrey: #02030a;
-    --DarkGrey: #25262A; 
+    --DarkGrey: #25262A;
     --greyLight: #747474;
     --wt: #ffffff;
 }
+
+/* selection */
+::-moz-selection {
+    /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+
+::selection {
+    color: var(--bgGrey);
+    background: var(--themeC);
+}
+
+/* custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--greyLight);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--themeC);
+}
+
+
+
+/*  */
 
 * {
     /* font-family: 'Tangerine', cursive; */
@@ -53,11 +92,11 @@ a {
 }
 
 .note_con_text .method {
-    color: #4250d0;
+    color: #1cff00;
 }
 
 .note_con_text .propname {
-    color: #cac645;
+    color: #fff700;
 }
 
 .note_con_text .scope {
@@ -69,14 +108,45 @@ a {
 }
 
 .note_con_text .string {
-    color: #5b00ab;
+    color: #c924ff;
 }
 
 .note_con_text .number {
-    color: #3bbcbf;
+    color: #00f9ff;
 }
 
 .note_con_text .comment {
-    color: #78707e;
+    color: #858585;
     font-style: italic;
+}
+
+
+.blinking_cursor {
+    font-weight: 100;
+    color: #c924ff;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: #c924ff;
+    }
+}
+
+/* canvas */
+
+canvas {
+    background: transparent;
+    position: absolute;
+    top: 16%;
+    left: -30%;
+    width: 10%;
+    height: 100vh;
+    z-index: -1;
 }
