@@ -131,8 +131,16 @@ h1 {
 }
 
 .intro_con {
-    height: calc(100vh - 100px);
+    position: relative;
+    min-height: calc(100vh - 100px);
+}
+
+.intro_subCon {
     margin: 0 100px;
+
+    background: url("../assests/cover_pic.svg") no-repeat;
+    background-size: 60%;
+    background-position: 110% -5%;
 }
 
 .intro_subs {
@@ -216,9 +224,9 @@ h1 {
 }
 
 .intro_subRight {
-    background: url("../assests/cover_pic.svg") no-repeat;
+    /* background: url("../assests/cover_pic.svg") no-repeat;
     background-size: 115%;
-    background-position: 50% 0%;
+    background-position: 50% 0%; */
 }
 
 /* Intro */
@@ -226,7 +234,7 @@ h1 {
 /* services_con */
 .services_wrap {
     background: var(--DarkGrey);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .services_con {
@@ -249,7 +257,7 @@ h1 {
 .services_card {
     background: var(--bgGrey);
     margin-bottom: 10px;
-    width: 450px;
+    width: 80%;
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0px 0px 15px #1e1f22;

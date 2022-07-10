@@ -139,14 +139,23 @@ a {
     }
 }
 
+/* particle animation */
+
+.particle_aniCon {
+    position: absolute !important;
+    bottom: -15%;
+    left: -22%;
+    z-index: -1;
+}
+
 /* canvas */
 
 canvas {
+    /* position: absolute; */
     background: transparent;
-    position: absolute;
-    top: 16%;
-    left: -30%;
-    width: 10%;
-    height: 100vh;
-    z-index: -1;
+    /* top: -20%;
+    left: -30%; */
+    width: 100% !important;
+    /* height: 100vh; */
+    z-index: -100;
 }
