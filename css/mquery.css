@@ -16,55 +16,20 @@ screen and (max-width: 600px) {
     /* intro */
 
     .intro_con {
+        background-size: 140%;
+        background-position: 3% 170%;
+
         margin: 0;
-        padding: 30px;
+        padding: 30px 30px 200px;
     }
 
-    /* .intro_con {
-        position: relative;
-        min-height: calc(100vh - 100px);
-        background: url("../assests/cover_pic.svg") no-repeat;
-        background-size: 150%;
-        background-position: -20% 180%;
+    .intro_tags_con {
+        margin: 0px 0 20px;
     }
 
-
-    .intro_subCon {
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0 12px;
-
-        background-size: 100%;
-        background-position: bottom;
-
-        min-height: 100vh;
-        border: 1px solid red;
+    .intro_head {
+        letter-spacing: -4px;
     }
-
-    .intro_subs {
-        width: 100%;
-        min-height: 100vh;
-    }
-
-    .intro_subLeft {
-        padding: 0;
-    }
-
-    .introText1 {
-        margin-bottom: 30px;
-        font-size: 10vw;
-    }
-
-    .mini_count_con {
-        position: absolute;
-        bottom: -100px;
-        margin-top: 80px;
-        justify-content: flex-start;
-    }
-
-    .intro_subRight {
-        display: none;
-    } */
 
     .particle_aniCon {
         /* display: none; */
@@ -287,19 +252,21 @@ screen and (max-width: 600px) {
 @media only screen and (min-width: 1367px) and (max-width: 1980px) {
 
     /* intro  */
-    .intro_subCon {
-        /* background-size: 65%; */
-        background-position: 110% 10%;
+
+
+
+    .intro_tags_con {
+        margin: 50px 0 20px;
     }
 
-    .introText2 {
-        font-size: 19px;
+    .intro_head {
+        font-size: 60px;
     }
 
     .mini_count_con {
-        margin-top: 130px;
-        justify-content: flex-start;
+        bottom: 30px;
     }
+
 
 
     /* services */

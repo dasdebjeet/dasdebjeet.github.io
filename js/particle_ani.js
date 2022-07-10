@@ -28,7 +28,7 @@ $(document).ready(() => {
     function init() {
 
 
-        container = document.querySelector('.particle_aniCon');
+        container = document.querySelector('.intro_particle_con');
         // container = document.createElement('div');
         // document.body.appendChild(container);
         if (container) {

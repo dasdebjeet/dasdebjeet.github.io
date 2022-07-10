@@ -141,10 +141,10 @@ a {
 
 /* particle animation */
 
-.particle_aniCon {
-    position: absolute !important;
+.intro_particle_con {
+    position: absolute;
     bottom: -15%;
-    left: -22%;
+    left: -30%;
     z-index: -1;
 }
 

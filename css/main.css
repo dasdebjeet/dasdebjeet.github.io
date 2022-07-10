@@ -50,7 +50,7 @@ h1 {
 }
 
 .navbarMobile_wrap>.siteLogo {
-    font-size: 20px;
+    font-size: 25px;
     width: auto;
 }
 
@@ -204,14 +204,25 @@ h1 {
 
 
 /* Intro */
+.intro_wrap {
+    position: relative;
+}
+
 .intro_con {
+    background: url("../assests/cover_pic.svg") no-repeat;
+    background-size: 60%;
+    background-position: 110% 30%;
+
+
+    min-height: calc(100vh - 130px);
+    position: relative;
     margin: 0 100px;
-    padding: 0;
+    /* padding: 50px 0 100px; */
     font-family: 'Share Tech Mono', monospace;
 }
 
 .intro_tags_con {
-    margin-bottom: 30px;
+    margin: 30px 0 20px;
     line-height: 30px;
 }
 
@@ -226,14 +237,14 @@ h1 {
 }
 
 .intro_head {
-    margin-bottom: 30px;
-    font-size: 50px;
-    letter-spacing: -4px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    /* letter-spacing: -4px; */
     text-shadow: -2px 8px 8px #17181b;
 }
 
 .intro_text {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 15px;
     letter-spacing: -1px;
     color: var(--greyLight);
@@ -249,76 +260,9 @@ h1 {
     text-decoration: underline;
 }
 
-/* .intro_con {
-    position: relative;
-    min-height: calc(100vh - 100px);
-    background: url("../assests/cover_pic.svg") no-repeat;
-    background-size: 50%;
-    background-position: 90% -10%;
-}
-
-.intro_subCon {
-    margin: 0 100px;
-    min-height: calc(100vh - 100px);
-}
-
-.intro_subs {
-    width: 50%;
-    min-height: 100vh;
-    border: 1px solid red;
-}
-
-.intro_subLeft {
-    position: relative;
-    margin-left: 100px;
-    padding: 50px 0px;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-.intro_tag_con {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.intro_tag {
-    background: var(--themeC);
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 3px 8px;
-    font-size: 12px;
-    color: var(--fullDarkGrey);
-    border-radius: 3px;
-}
-
-.introText1 {
-    margin-bottom: 30px;
-    font-size: 4vw;
-    letter-spacing: -4px;
-    text-shadow: -2px 8px 8px #17181b;
-}
-
-.introText2 {
-    margin-bottom: 50px;
-    font-size: 15px;
-    letter-spacing: -1px;
-    color: var(--greyLight);
-}
-
-.intro_subLeft .chatBtn {
-    margin-bottom: 50px;
-    letter-spacing: 1.5px;
-    font-family: 'Teko', sans-serif;
-    font-size: 22px;
-    color: var(--themeC);
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
 .mini_count_con {
     position: absolute;
-    bottom: -120px;
-    margin-top: 80px;
+    bottom: 20px;
     justify-content: flex-start;
 }
 
@@ -330,7 +274,7 @@ h1 {
 }
 
 .mini_countSec1 {
-    width: 50px;
+    width: 40px;
     margin-top: 5px;
     justify-content: flex-start;
     height: 100%;
@@ -345,12 +289,6 @@ h1 {
     font-size: 18px;
     line-height: 20px;
 }
-
-.intro_subRight {
-    background: url("../assests/cover_pic.svg") no-repeat;
-    background-size: 115%;
-    background-position: 50% 0%;
-} */
 
 /* Intro */
 
