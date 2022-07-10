@@ -124,7 +124,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js'></script>
 
         <script src="./js/main.js"></script>
-        <script src="./js/particle_ani.js"></script>
+        <!-- <script src="./js/particle_ani.js"></script> -->
         <script src="./js/txtType.js"></script>
         <script src="./js/card_tilt.js"></script>
 
@@ -132,9 +132,39 @@
 
     <body>
         <div class="main_wrapper">
-            <div class="navbar flexc">
-                <div class="navbar_wrap siteLogo flexc"><a><strong style="color:#ffffff">Debjeet</strong>Das.</a></div>
-                <div class="navbar_wrap menus_wrap flexc">
+            <div class="navbarMobile">
+                <div class="navbarMobile_wrap flexc">
+                    <div class="navbarMobile_menu siteLogo flexc"><a><strong style="color:#ffffff">Debjeet</strong>Das.</a></div>
+                    <div class="navbarMobile_menu dropdownMenu_icn flexc">
+                        <i class="fal fa-bars"></i>
+                        <div class="dropdownMenu_icnOverlay"></div>
+                    </div>
+                </div>
+                <div class="dropdownMenu_con">
+                    <div style="padding: 10px 0;"></div>
+                    <a href="#services">
+                        <div class="dropdownMenu"><i class="fal fa-terminal"></i> Services</div>
+                    </a>
+                    <a href="#work">
+                        <div class="dropdownMenu"><i class="fal fa-terminal"></i> Work</div>
+                    </a>
+                    <a href="#notes">
+                        <div class="dropdownMenu"><i class="fal fa-terminal"></i> Notes</div>
+                    </a>
+                    <a href="#contact">
+                        <div class="dropdownMenu" style="margin-bottom:0;"><i class="fal fa-terminal"></i> Contact</div>
+                    </a>
+                    <div style="padding: 15px 0;"></div>
+                    <a href="">
+                        <div class="dropdownMenu" style="margin-bottom:0; color: var(--themeC);">Download my resume <i class="fal fa-download"></i></div>
+                    </a>
+                    <div style="padding: 10px 0;"></div>
+                </div>
+            </div>
+
+            <div class="navbarDesktop flexc">
+                <div class="navbarDesktop_wrap siteLogo flexc"><a><strong style="color:#ffffff">Debjeet</strong>Das.</a></div>
+                <div class="navbarDesktop_wrap menus_wrap flexc">
                     <a href="#services" class="menu_con">
                         <div class="menu"><i class="fal fa-terminal"></i> Services</div>
                     </a>
@@ -164,7 +194,7 @@
 
 
             <div class="main_container">
-
+                <!-- 
                 <div class="intro_con" id="">
                     <div class="intro_subCon flexc">
                         <div class="intro_subs intro_subLeft">
@@ -172,7 +202,7 @@
                                 <div class="intro_tag">#engineer</div>
                                 <div class="intro_tag">#CS Student</div>
                                 <div class="intro_tag">#coderForLife</div>
-                                <div class="fbreak"></div> <!-- break -->
+                                <div class="fbreak"></div>
                                 <div class="intro_tag">#WEB Developer</div>
                                 <div class="intro_tag">#WEB Designer</div>
                             </div>
@@ -195,6 +225,23 @@
                         <div class="intro_subs intro_subRight"></div>
                     </div>
                     <div class="particle_aniCon"></div>
+                </div> -->
+
+                <div class="intro_wrap">
+                    <div class="intro_con">
+                        <div class="intro_tags_con">
+                            <span class="intro_tag">#engineer</span>
+                            <span class="intro_tag">#CS Student</span>
+                            <span class="intro_tag">#coderForLife</span><br>
+                            <!-- <div class="fbreak"></div> -->
+                            <span class="intro_tag">#WEB Developer</span>
+                            <span class="intro_tag">#WEB Designer</span>
+                        </div>
+                        <div class="intro_head">Talk is cheap.<br>Show me the Code/></div>
+                        <div class="intro_text">I develope and code beautify simpily <br>and I love what I do</div>
+                        <a href="mailto:debjeet194@gmail.com?body=Hi,I found this website and I would like to have a talk with u." target="_blank" class="chatBtn">Let's chat!</a>
+                    </div>
+                    <div>fdgklufdighfkdjgkj</div>
                 </div>
 
                 <div class="services_wrap" id="services">

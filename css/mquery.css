@@ -4,16 +4,23 @@
 @media only screen and (max-width:481px),
 screen and (max-width: 600px) {
 
-
     /* navbar */
-    .navbar {
-        display: none;
+    .navbarMobile {
+        display: block;
     }
 
+    .navbarDesktop {
+        display: none;
+    }
 
     /* intro */
 
     .intro_con {
+        margin: 0;
+        padding: 30px;
+    }
+
+    /* .intro_con {
         position: relative;
         min-height: calc(100vh - 100px);
         background: url("../assests/cover_pic.svg") no-repeat;
@@ -37,7 +44,6 @@ screen and (max-width: 600px) {
     .intro_subs {
         width: 100%;
         min-height: 100vh;
-        /* border: 1px solid red; */
     }
 
     .intro_subLeft {
@@ -58,7 +64,7 @@ screen and (max-width: 600px) {
 
     .intro_subRight {
         display: none;
-    }
+    } */
 
     .particle_aniCon {
         /* display: none; */
@@ -137,7 +143,7 @@ screen and (max-width: 600px) {
 
     .work_card {
         margin-bottom: 50px;
-        width: 300px;
+        width: 100%;
     }
 
     .work_card_con_bgTitle {
@@ -161,7 +167,7 @@ screen and (max-width: 600px) {
     }
 
     .work_card_imgCon {
-        height: 170px;
+        height: auto;
     }
 
     .imgOverlay_text {
@@ -267,6 +273,7 @@ screen and (max-width: 600px) {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
