@@ -133,23 +133,24 @@ h1 {
 .intro_con {
     position: relative;
     min-height: calc(100vh - 100px);
+    background: url("../assests/cover_pic.svg") no-repeat;
+    background-size: 50%;
+    background-position: 90% -10%;
 }
 
 .intro_subCon {
     margin: 0 100px;
-
-    background: url("../assests/cover_pic.svg") no-repeat;
-    background-size: 60%;
-    background-position: 110% -5%;
+    /* min-height: calc(100vh - 100px); */
 }
 
 .intro_subs {
     width: 50%;
-    min-height: 100%;
+    /* min-height: 100vh; */
     /* border: 1px solid red; */
 }
 
 .intro_subLeft {
+    position: relative;
     /* margin-left: 100px; */
     padding: 50px 0px;
     font-family: 'Share Tech Mono', monospace;
@@ -165,8 +166,8 @@ h1 {
     background: var(--themeC);
     margin-left: 10px;
     margin-bottom: 10px;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 3px 8px;
+    font-size: 12px;
     color: var(--fullDarkGrey);
     border-radius: 3px;
 }
@@ -186,6 +187,7 @@ h1 {
 }
 
 .intro_subLeft .chatBtn {
+    margin-bottom: 50px;
     letter-spacing: 1.5px;
     font-family: 'Teko', sans-serif;
     font-size: 22px;
@@ -195,6 +197,8 @@ h1 {
 }
 
 .mini_count_con {
+    /* position: absolute; */
+    /* bottom: -120px; */
     margin-top: 80px;
     justify-content: flex-start;
 }
@@ -348,6 +352,7 @@ h1 {
 }
 
 .services_subRight_subTitle {
+    width: 80%;
     margin-bottom: 50px;
     letter-spacing: 1.5px;
     font-family: 'Quicksand', sans-serif;
@@ -422,7 +427,6 @@ h1 {
     margin-top: 50px;
 
     z-index: 1;
-
 }
 
 .work_card_con_bgTitle {
@@ -454,7 +458,10 @@ h1 {
     box-shadow: 1px 1px 18px #0e0e10;
     cursor: pointer;
     border-radius: 5px;
+}
 
+.work_subLeft .work_card:nth-child(3) {
+    margin-top: 200px;
 }
 
 .work_card:hover .imgOverlay_count>i {
@@ -703,6 +710,10 @@ h1 {
     font-weight: 100;
 }
 
+.cc_small {
+    display: none;
+}
+
 /* contact */
 
 
@@ -728,6 +739,10 @@ h1 {
     letter-spacing: 1.5px;
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
+}
+
+.footer_subLeft_head {
+    width: 98%;
 }
 
 .footer_subLeft_title {
@@ -814,5 +829,5 @@ h1 {
 }
 
 .f_socialLink {
-    margin-right: 30px;
+    margin-right: 33px;
 }

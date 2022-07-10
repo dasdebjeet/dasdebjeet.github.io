@@ -2,7 +2,266 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width:481px),
-screen and (max-width: 600px) {}
+screen and (max-width: 600px) {
+
+
+    /* navbar */
+    .navbar {
+        display: none;
+    }
+
+
+    /* intro */
+
+    .intro_con {
+        position: relative;
+        min-height: calc(100vh - 100px);
+        background: url("../assests/cover_pic.svg") no-repeat;
+        background-size: 150%;
+        background-position: -20% 180%;
+    }
+
+
+    .intro_subCon {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 12px;
+
+        background-size: 100%;
+        background-position: bottom;
+
+        min-height: 100vh;
+        border: 1px solid red;
+    }
+
+    .intro_subs {
+        width: 100%;
+        min-height: 100vh;
+        /* border: 1px solid red; */
+    }
+
+    .intro_subLeft {
+        padding: 0;
+    }
+
+    .introText1 {
+        margin-bottom: 30px;
+        font-size: 10vw;
+    }
+
+    .mini_count_con {
+        position: absolute;
+        bottom: -100px;
+        margin-top: 80px;
+        justify-content: flex-start;
+    }
+
+    .intro_subRight {
+        display: none;
+    }
+
+    .particle_aniCon {
+        /* display: none; */
+    }
+
+
+
+
+    /* services */
+
+    .services_wrap {}
+
+
+    .services_con {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 50px 30px 30px;
+    }
+
+    .services_subs {
+        width: 100%;
+    }
+
+
+    .services_subRight {
+        margin-bottom: 100px;
+    }
+
+    .services_subRight_title {
+        font-size: 30px;
+    }
+
+    .services_subRight_subTitle {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .services_subRight_Text {
+        width: 100%;
+        font-size: 14px;
+        /* text-align: justify; */
+    }
+
+
+
+    .services_card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services_card_head {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .services_card_text {
+        font-size: 14px;
+    }
+
+
+    /* work */
+    .work_wrap {}
+
+    .work_con {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+    }
+
+
+    .work_card_con {
+        margin-left: 50px;
+    }
+
+    .work_card {
+        margin-bottom: 50px;
+        width: 300px;
+    }
+
+    .work_card_con_bgTitle {
+        display: none;
+    }
+
+    .work_subLeft .work_card:nth-child(3) {
+        margin-top: 200px;
+    }
+
+    .work_subLeft .work_card:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .work_card_LShift {
+        margin-left: 0px;
+    }
+
+    .work_card_RShift {
+        margin-right: 0px;
+    }
+
+    .work_card_imgCon {
+        height: 170px;
+    }
+
+    .imgOverlay_text {
+        font-size: 30px;
+    }
+
+    .work_subRight_head {
+        margin-top: 70px;
+        font-size: 25px;
+        text-align: right;
+    }
+
+    .work_subRight_text {
+        text-align: right;
+    }
+
+    /* notes */
+
+    .note_con {
+        margin: 0px;
+        padding: 100px 30px 0;
+    }
+
+    .note_con_text {
+        margin: 10px;
+        padding-left: 30px;
+        font-size: 13px;
+    }
+
+    .code_ln::before {
+        left: -30px;
+    }
+
+    /* contact */
+
+    .contact_con {
+        margin: 0px;
+        padding: 100px 30px;
+    }
+
+    .contact_cardCon {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 2px;
+        grid-row-gap: 15px;
+    }
+
+    .cc_big {
+        display: none;
+    }
+
+    .cc_small {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0px;
+        padding: 50px 30px 30px;
+    }
+
+    .footer_subRight {
+        margin-top: 70px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .footer_bottomSub {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer_bottomLeft {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer_bottomLeft .siteLogo {
+        font-size: 30px;
+    }
+
+    .copywrite {
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+
+    .f_socialLink_con {
+        margin: 50px 0 30px;
+    }
+}
 
 @media only screen and (max-width: 600px) {}
 
@@ -18,4 +277,103 @@ screen and (max-width: 600px) {}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
-@media only screen and (min-width: 1367px) and (max-width: 1980px) {}
+@media only screen and (min-width: 1367px) and (max-width: 1980px) {
+
+    /* intro  */
+    .intro_subCon {
+        /* background-size: 65%; */
+        background-position: 110% 10%;
+    }
+
+    .introText2 {
+        font-size: 19px;
+    }
+
+    .mini_count_con {
+        margin-top: 130px;
+        justify-content: flex-start;
+    }
+
+
+    /* services */
+    .services_card_head {
+        font-size: 20px;
+    }
+
+    .services_card_text {
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .services_card_proj {
+        font-size: 13px;
+    }
+
+    .services_subRight_title {
+        font-size: 45px;
+    }
+
+    .services_subRight_subTitle {
+        font-size: 25px;
+    }
+
+    .services_subRight_Text {
+        font-size: 15px;
+    }
+
+    /* work */
+    .work_subLeft_text {
+        font-size: 15px;
+    }
+
+    .work_subLeft_head {
+        font-size: 35px;
+    }
+
+    .work_card {
+        margin-bottom: 100px;
+        width: 500px;
+    }
+
+    .work_card_imgCon {
+        height: 285px;
+    }
+
+    .work_subRight_head {
+        font-size: 35px;
+    }
+
+    .work_subRight_text {
+        font-size: 15px;
+    }
+
+    /* note */
+
+    .note_con_head {
+        font-size: 15px;
+    }
+
+    .note_con_title {
+        font-size: 35px;
+    }
+
+    /* contact */
+
+    .contact_con_head {
+        font-size: 15px;
+    }
+
+    .contact_con_title {
+        font-size: 35px;
+    }
+
+    .contact_cardCon {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .contact_card {
+        font-size: 17px;
+    }
+
+
+}
