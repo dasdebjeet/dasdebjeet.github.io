@@ -6,7 +6,7 @@
     --bgGrey: #2D2E32;
     --fullDarkGrey: #191A1D;
     --DarkGrey: #25262A;
-    --greyLight: #747474;
+    --greyLight: #999999;
     --wt: #ffffff;
 }
 
@@ -20,6 +20,23 @@
 ::selection {
     color: var(--bgGrey);
     background: var(--themeC);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bgGrey);
+    color: var(--wt);
+
+    cursor: none !important;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
 }
 
 /* custom scrollbar */
@@ -50,7 +67,6 @@
 /*  */
 
 * {
-    /* font-family: 'Tangerine', cursive; */
     margin: 0;
     padding: 0;
     border: 0;
@@ -67,7 +83,6 @@
 
 .fbreak {
     flex-basis: 100%;
-    /* width: 100%; */
     height: 0;
 }
 
@@ -81,8 +96,57 @@ a {
     color: inherit;
 }
 
+/* cursor */
+a {
+    cursor: none;
+}
 
 
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid var(--fullDarkGrey);
+    transition: all 200ms ease-out;
+    position: fixed;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 99999999;
+}
+
+.cursor2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--themeC);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s;
+    z-index: 99999999;
+}
+
+.hover {
+    background-color: var(--fullDarkGrey);
+}
+
+.cursorinnerhover {
+    mix-blend-mode: difference;
+    width: 50px;
+    height: 50px;
+}
+
+.logoSp {
+    background: url("../assests/siteLogo.png") no-repeat;
+    background-size: 100%;
+    mix-blend-mode: normal;
+    width: 200px;
+    height: 200px;
+}
 
 /* code systanx */
 
@@ -151,11 +215,8 @@ a {
 /* canvas */
 
 canvas {
-    /* position: absolute; */
     background: transparent;
-    /* top: -20%;
-    left: -30%; */
+
     width: 100% !important;
-    /* height: 100vh; */
     z-index: -100;
 }

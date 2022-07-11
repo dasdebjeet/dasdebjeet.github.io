@@ -192,9 +192,7 @@ screen and (max-width: 600px) {
     }
 
     /* footer */
-    .footer_con {
-
-    }
+    .footer_con {}
 
     .footer {
         flex-direction: column;
@@ -235,7 +233,7 @@ screen and (max-width: 600px) {
         margin-left: 0px;
     }
 
-    .f_socialLink_con {
+    .footer_socialLink_con {
         margin: 50px 0 30px;
     }
 }
