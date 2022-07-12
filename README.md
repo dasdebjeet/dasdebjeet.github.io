@@ -10,6 +10,6 @@ Made in HTML, CSS, jquery, ajax, and libraries used are threejs, vanilla-tiltjs 
 ![image](./assests/UI/portfolio_ui.png)
 <br>
 
-**Made with 💜 by Debjeet. © 2022 all rights reserved.**
+**Made with </> by Debjeet. © 2022 all rights reserved.**
 
 *Author: Debjeet Das*
